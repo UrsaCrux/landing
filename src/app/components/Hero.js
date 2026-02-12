@@ -55,10 +55,8 @@ export default function Hero() {
 
                 {/* CTAs */}
                 <div className="animate-fade-in-up delay-400 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                    <a href="#proyectos" className="btn-glow text-base">
-                        🚀 Ver Proyectos
-                    </a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdN-On0V4bmve3Oc2dh_k56VDuE0CQ3KVzsbILfGCLU6K_XlA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn-outline text-base">
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdN-On0V4bmve3Oc2dh_k56VDuE0CQ3KVzsbILfGCLU6K_XlA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn-glow text-base">
                         Únete al equipo
                     </a>
                 </div>

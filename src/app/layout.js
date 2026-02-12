@@ -10,6 +10,10 @@ export const metadata = {
   title: "CCUC — Club de Cohetería UC",
   description:
     "Club de Cohetería Ursa Crux. Diseñamos, construimos y lanzamos cohetes.",
+  icons: {
+    icon: "/logo1.jpeg",
+    apple: "/logo1.jpeg",
+  },
 };
 
 export default function RootLayout({ children }) {
