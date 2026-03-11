@@ -8,6 +8,11 @@ const SLIDES = [
         alt: "El equipo trabajando en el taller",
         caption: "Trabajando juntos en el taller 🔧",
     },
+    {
+        src:"/bienvenidaNovata-1.jpeg",
+        alt: "El equipo presente en la bienvenida novata UC 2026",
+        caption: "Recibiendo a la nueva generación en la bienvenida novata 🎉",
+    }
 ];
 
 export default function Gallery() {
