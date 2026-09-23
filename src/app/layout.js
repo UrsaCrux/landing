@@ -7,12 +7,12 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "CCUC — Club de Cohetería UC",
+  title: "Club de Cohetería Ursa Crux",
   description:
     "Club de Cohetería Ursa Crux. Diseñamos, construimos y lanzamos cohetes.",
   icons: {
-    icon: "/logo1.jpeg",
-    apple: "/logo1.jpeg",
+    icon: "/logo2.jpg",
+    apple: "/logo2.jpg",
   },
 };
 

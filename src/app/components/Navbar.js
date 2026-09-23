@@ -14,18 +14,18 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-black">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-[#02000A]/90 backdrop-blur-md border-b border-white/5">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 {/* Logo */}
                 <a href="#inicio" className="flex items-center gap-3 group">
                     <Image
-                        src="/logo1.jpeg"
-                        alt="CCUC Logo"
+                        src="/logo2.jpg"
+                        alt="Club de Cohetería Ursa Crux Logo"
                         width={44}
                         height={44}
-                        className="rounded-full border border-white/10 transition-all duration-300 group-hover:border-accent group-hover:shadow-[0_0_16px_rgba(26,107,170,0.4)]"
+                        className="rounded-full border border-white/10 transition-all duration-300 group-hover:border-accent group-hover:shadow-[0_0_16px_rgba(245,108,39,0.4)]"
                     />
-                    <span className="text-lg font-bold tracking-wide">CCUC</span>
+                    <span className="text-base sm:text-lg font-bold tracking-wide text-white">Club de Cohetería Ursa Crux</span>
                 </a>
 
                 {/* Desktop links */}
@@ -34,7 +34,7 @@ export default function Navbar() {
                         <li key={link.href}>
                             <a
                                 href={link.href}
-                                className="relative rounded-full px-4 py-2 text-sm font-medium text-white/70 transition-all duration-300 hover:text-white hover:bg-white/5"
+                                className="relative rounded-full px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:text-accent hover:bg-white/5"
                             >
                                 {link.label}
                             </a>
@@ -73,13 +73,13 @@ export default function Navbar() {
                 className={`md:hidden overflow-hidden transition-all duration-500 ${menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                     }`}
             >
-                <div className="flex flex-col gap-2 bg-black px-6 pb-6">
+                <div className="flex flex-col gap-2 bg-[#02000A] px-6 pb-6 border-b border-white/5">
                     {NAV_LINKS.map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
                             onClick={() => setMenuOpen(false)}
-                            className="rounded-lg px-4 py-3 text-sm font-medium text-white/70 transition-all hover:text-white hover:bg-white/5"
+                            className="rounded-lg px-4 py-3 text-sm font-medium text-white transition-all hover:text-accent hover:bg-white/5"
                         >
                             {link.label}
                         </a>

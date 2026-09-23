@@ -91,8 +91,8 @@ export default function About() {
                             style={{ animationDelay: `${i * 0.1}s` }}
                         >
                             <span className="mb-4 block text-4xl">{p.icon}</span>
-                            <h3 className="mb-3 text-xl font-bold">{p.title}</h3>
-                            <p className="text-sm leading-relaxed text-text-muted">{p.text}</p>
+                            <h3 className="mb-3 text-xl font-bold text-white">{p.title}</h3>
+                            <p className="text-sm leading-relaxed text-white">{p.text}</p>
                         </div>
                     ))}
                 </div>

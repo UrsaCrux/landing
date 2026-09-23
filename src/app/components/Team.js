@@ -61,8 +61,8 @@ export default function Team() {
                             <div className="team-icon mb-4 flex h-14 w-14 items-center justify-center rounded-2xl text-3xl">
                                 {team.icon}
                             </div>
-                            <h3 className="mb-2 text-xl font-bold">{team.name}</h3>
-                            <p className="text-sm leading-relaxed text-text-muted">
+                            <h3 className="mb-2 text-xl font-bold text-white">{team.name}</h3>
+                            <p className="text-sm leading-relaxed text-white">
                                 {team.description}
                             </p>
                         </div>
@@ -72,10 +72,10 @@ export default function Team() {
                 {/* CTA */}
                 <div className="mt-16 text-center">
                     <div className="glass-card mx-auto inline-block px-10 py-8">
-                        <p className="mb-3 text-xl font-bold">
+                        <p className="mb-3 text-xl font-bold text-white">
                             ¿Te tinca sumarte? 🙌
                         </p>
-                        <p className="mb-6 text-sm text-text-muted max-w-md mx-auto">
+                        <p className="mb-6 text-sm text-white max-w-md mx-auto">
                             No importa tu carrera ni tu experiencia. Si te motiva
                             aprender, construir y pasarla bien, ¡te estamos esperando!
                         </p>

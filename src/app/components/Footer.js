@@ -23,22 +23,22 @@ const SECTIONS = [
 
 export default function Footer() {
     return (
-        <footer className="relative z-10 border-t border-white/5 bg-[rgba(10,10,20,0.6)] backdrop-blur-xl">
+        <footer className="relative z-10 border-t border-white/5 bg-[#02000A]/80 backdrop-blur-xl">
             <div className="mx-auto max-w-6xl px-6 py-16">
                 <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
                     {/* Brand */}
                     <div className="lg:col-span-2">
                         <div className="mb-4 flex items-center gap-3">
                             <Image
-                                src="/logo1.jpeg"
-                                alt="CCUC Logo"
+                                src="/logo2.jpg"
+                                alt="Club de Cohetería Ursa Crux Logo"
                                 width={40}
                                 height={40}
                                 className="rounded-full border border-white/10"
                             />
-                            <span className="text-lg font-bold">CCUC</span>
+                            <span className="text-lg font-bold text-white">Club de Cohetería Ursa Crux</span>
                         </div>
-                        <p className="max-w-xs text-sm leading-relaxed text-text-muted">
+                        <p className="max-w-xs text-sm leading-relaxed text-white">
                             Club de Cohetería Ursa Crux.
                             Construyendo el futuro aeroespacial de Chile, un cohete a la vez.
                         </p>
@@ -47,7 +47,7 @@ export default function Footer() {
                     {/* Link sections */}
                     {SECTIONS.map((section) => (
                         <div key={section.title}>
-                            <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white/50">
+                            <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white">
                                 {section.title}
                             </h4>
                             <ul className="flex flex-col gap-2.5">
@@ -57,7 +57,7 @@ export default function Footer() {
                                             href={link.href}
                                             target={link.href.startsWith("http") ? "_blank" : undefined}
                                             rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                                            className="text-sm text-text-muted transition-colors hover:text-accent"
+                                            className="text-sm text-white transition-colors hover:text-accent"
                                         >
                                             {link.label}
                                         </a>
@@ -70,10 +70,10 @@ export default function Footer() {
 
                 {/* Bottom bar */}
                 <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 sm:flex-row">
-                    <p className="text-xs text-white/30">
-                        © {new Date().getFullYear()} CCUC — Club de Cohetería UC. Todos los derechos reservados.
+                    <p className="text-xs text-white">
+                        © {new Date().getFullYear()} Club de Cohetería Ursa Crux. Todos los derechos reservados.
                     </p>
-                    <p className="text-xs text-white/30">
+                    <p className="text-xs text-white">
                         Club de Cohetería Ursa Crux
                     </p>
                 </div>

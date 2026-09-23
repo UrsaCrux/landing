@@ -1,28 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a14;
-  --foreground: #f0f0f5;
-  --accent: #1a6baa;
-  --accent-light: #3a8fd4;
-  --accent-glow: rgba(26, 107, 170, 0.3);
+  --background: #02000A;
+  --foreground: #ffffff;
+  --primary: #4E3571;
+  --primary-light: #C5AAEA;
+  --primary-glow: rgba(78, 53, 113, 0.4);
+  --accent: #F56C27;
+  --accent-light: #ff8547;
+  --accent-glow: rgba(245, 108, 39, 0.35);
   --glass-bg: rgba(255, 255, 255, 0.04);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.12);
   --glass-hover: rgba(255, 255, 255, 0.08);
-  --navy: #0d1b2a;
-  --navy-light: #1b2d45;
-  --text-muted: #8892a4;
-  --uc-blue: #0f4c81;
-  --uc-blue-light: #1a6baa;
-  --team-propulsion: #ff6b35;
-  --team-diseno: #1a6baa;
-  --team-sistemas: #2dd4bf;
-  --team-enlace: #f59e0b;
+  --navy: #130a24;
+  --navy-light: #251642;
+  --text-muted: #ffffff;
+  --uc-blue: #4E3571;
+  --uc-blue-light: #C5AAEA;
+  --team-propulsion: #F56C27;
+  --team-diseno: #C5AAEA;
+  --team-sistemas: #4E3571;
+  --team-enlace: #F56C27;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-navy: var(--navy);
@@ -54,8 +59,8 @@ body {
 
 .glass-card:hover {
   background: var(--glass-hover);
-  border-color: rgba(26, 107, 170, 0.25);
-  box-shadow: 0 0 30px var(--accent-glow);
+  border-color: rgba(197, 170, 234, 0.25);
+  box-shadow: 0 0 30px var(--primary-glow);
   transform: translateY(-4px);
 }
 
@@ -76,13 +81,13 @@ body {
 
 .btn-glow:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 40px var(--accent-glow), 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 40px var(--accent-glow), 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 /* ---- Outline button ---- */
 .btn-outline {
   background: transparent;
-  color: var(--foreground);
+  color: #ffffff;
   font-weight: 600;
   padding: 0.85rem 2.25rem;
   border-radius: 9999px;
@@ -93,7 +98,7 @@ body {
 
 .btn-outline:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: #ffffff;
   box-shadow: 0 0 20px var(--accent-glow);
   transform: translateY(-2px);
 }
@@ -104,10 +109,11 @@ body {
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.15;
+  color: #ffffff;
 }
 
 .section-subtitle {
-  color: var(--text-muted);
+  color: #ffffff;
   font-size: 1.1rem;
   max-width: 38rem;
   line-height: 1.7;
@@ -117,7 +123,7 @@ body {
 .accent-line {
   width: 64px;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  background: linear-gradient(90deg, var(--accent), var(--primary-light));
   border-radius: 999px;
 }
 
@@ -207,11 +213,11 @@ body {
 
   0%,
   100% {
-    box-shadow: 0 0 20px var(--accent-glow);
+    box-shadow: 0 0 20px var(--primary-glow);
   }
 
   50% {
-    box-shadow: 0 0 40px var(--accent-glow), 0 0 60px rgba(26, 107, 170, 0.15);
+    box-shadow: 0 0 40px var(--primary-glow), 0 0 60px rgba(78, 53, 113, 0.25);
   }
 }
 
@@ -269,7 +275,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--navy-light);
+  background: var(--primary);
   border-radius: 999px;
 }
 
@@ -279,6 +285,6 @@ body {
 
 /* ---- Selection ---- */
 ::selection {
-  background: var(--accent);
+  background: var(--primary);
   color: #fff;
 }
