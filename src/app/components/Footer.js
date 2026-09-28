@@ -7,9 +7,8 @@ const SECTIONS = [
         links: [
             { label: "Inicio", href: "#inicio" },
             { label: "Nosotros", href: "#nosotros" },
-            { label: "Galería", href: "#galeria" },
+            { label: "Hitos", href: "#hitos" },
             { label: "Equipo", href: "#equipo" },
-
         ],
     },
     {

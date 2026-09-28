@@ -5,9 +5,8 @@ import Image from "next/image";
 const NAV_LINKS = [
     { label: "Inicio", href: "#inicio" },
     { label: "Nosotros", href: "#nosotros" },
-    { label: "Galería", href: "#galeria" },
+    { label: "Hitos", href: "#hitos" },
     { label: "Equipo", href: "#equipo" },
-
 ];
 
 export default function Navbar() {
