@@ -7,7 +7,7 @@ const HITOS = [
   {
     id: "spaceapps",
     tag: "Primer Lugar",
-    date: "2025",
+    date: "Noviembre 2025",
     category: "NASA Space Apps Challenge",
     title: "1.er Lugar en NASA Space Apps Challenge Chile",
     description:
@@ -20,10 +20,10 @@ const HITOS = [
     tag: "Comunidad UC",
     date: "Marzo 2026",
     category: "Campus San Joaquín",
-    title: "Presentes en la Bienvenida Novata UC",
+    title: "Presentes en la Bienvenida Novata UC 2026",
     description:
       "Estuvimos presentes con nuestro stand recibiendo a la nueva generación de novatos de la UC, compartiendo nuestra pasión por la cohetería e invitando a nuevos talentos a sumarse a Ursa Crux.",
-    images: ["/hitos/bienvenidanovata-2025.jpeg"],
+    images: ["/hitos/bienvenidanovata-2026.jpeg"],
     alt: "Stand de Ursa Crux en la Bienvenida Novata de la Universidad Católica",
   },
   {
@@ -33,14 +33,14 @@ const HITOS = [
     category: "Bienvenida Oficial",
     title: "Bienvenida Oficial con Referentes de la Industria",
     description:
-      "Realizamos un gran evento para recibir a los nuevos miembros del club, contando con charlas de Matilda Gaete (futura astronauta chilena), Sebastián Ogalde (NASA Jet Propulsion Laboratory), oficiales de la Fuerza Aérea Chilena (FACh) y miembros de otros clubes de cohetería.",
-    images: ["/hitos/bienvenida-ccuc-2025.jpg"],
+      "Realizamos un gran evento para recibir a los nuevos miembros del club, contando con charlas de Sebasthian Ogalde (Aspirante a astronauta chileno) y Francisco Eterovic, y la participación de un representante de la Fuerza Aérea Chilena (FACh) y miembros de otros clubes de cohetería.",
+    images: ["/hitos/bienvenida-ccuc-2026.jpg"],
     alt: "Evento de bienvenida oficial con invitados del sector aeroespacial",
   },
   {
     id: "space-generation",
     tag: "Congreso Internacional",
-    date: "2026",
+    date: "Abril 2026",
     category: "Aeroespacial",
     title: "5 Miembros en LATAM Space Generation Workshop",
     description:
@@ -51,18 +51,18 @@ const HITOS = [
   {
     id: "critical-hit",
     tag: "Feria Tecnológica",
-    date: "2026",
+    date: "Junio 2026",
     category: "Ingeniería UC",
     title: "Presentes en la Feria CRItical HIT",
     description:
-      "Participamos en la feria de innovación y proyectos en Ingeniería UC, interactuando con la comunidad universitaria, exhibiendo prototipos y motivando a estudiantes a postular al club.",
+      "Participamos en la feria de innovación y proyectos organizada por el Capítulo de Robótica de Ingeniería UC, interactuando con la comunidad universitaria, exhibiendo prototipos y motivando a estudiantes a postular al club.",
     images: ["/hitos/critical-hit.JPG"],
     alt: "Stand y prototipos de Ursa Crux en la feria CRItical HIT de Ingeniería UC",
   },
   {
     id: "aeromodelismo",
     tag: "Formación Técnica",
-    date: "2026",
+    date: "Junio 2026",
     category: "Visita Técnica",
     title: "Visita Técnica al Club de Aeromodelismo",
     description:
@@ -189,14 +189,14 @@ export default function Hitos() {
       aria-roledescription="carousel"
       aria-label="Nuestros Hitos y Logros"
     >
-      {/* Background ambient lighting */}
-      <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[radial-gradient(circle,rgba(78,53,113,0.25)_0%,transparent_70%)]" />
-
       {/* Header */}
       <div className="mx-auto max-w-5xl px-6 text-center mb-12 sm:mb-16">
         <div className="accent-line mx-auto mb-5" />
         <h2 className="section-title mb-4">
-          Nuestros <span className="text-accent">Hitos</span>
+          Nuestros{" "}
+          <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
+            Hitos
+          </span>
         </h2>
         <p className="section-subtitle mx-auto">
           Los momentos, logros y competencias que marcan el rumbo de Ursa Crux

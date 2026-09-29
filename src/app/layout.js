@@ -11,8 +11,11 @@ export const metadata = {
   description:
     "Club de Cohetería Ursa Crux. Diseñamos, construimos y lanzamos cohetes.",
   icons: {
-    icon: "/logo2.jpg",
-    apple: "/logo2.jpg",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: "/apple-icon.png",
   },
 };
 

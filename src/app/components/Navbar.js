@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const NAV_LINKS = [
     { label: "Inicio", href: "#inicio" },
-    { label: "Nosotros", href: "#nosotros" },
     { label: "Hitos", href: "#hitos" },
+    { label: "Nosotros", href: "#nosotros" },
     { label: "Equipo", href: "#equipo" },
 ];
 

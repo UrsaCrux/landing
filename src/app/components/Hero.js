@@ -33,8 +33,8 @@ export default function Hero() {
 
                 {/* Subtitle */}
                 <p className="animate-fade-in-up delay-200 mx-auto max-w-2xl text-lg text-white leading-relaxed mb-10 sm:text-xl">
-                    Diseñamos, construimos y lanzamos cohetes. Impulsando la ingeniería
-                    aeroespacial estudiantil desde la UC.
+                    Diseñamos, construimos y lanzamos cohetes y otros proyectos.
+                    Impulsando la ingeniería aeroespacial estudiantil desde la UC.
                 </p>
 
                 {/* CTAs */}

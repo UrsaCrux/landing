@@ -16,10 +16,9 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <About />
         <Hitos />
+        <About />
         <Team />
-
       </main>
       <Footer />
     </>
